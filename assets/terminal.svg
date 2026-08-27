@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="320" viewBox="0 0 820 320" role="img" aria-labelledby="title desc">
+  <title id="title">Terminal 7DSOLV</title>
+  <desc id="desc">Terminal carregando módulos do perfil com sucesso.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071521"/><stop offset="1" stop-color="#030810"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#20e3ff"/><stop offset="1" stop-color="#448cff"/></linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#14314a" stroke-width=".5" opacity=".25"/></pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>.cursor{animation:blink 1.2s steps(2,end) infinite}@keyframes blink{50%{opacity:0}}</style>
+  </defs>
+  <rect x="1" y="1" width="818" height="318" rx="12" fill="url(#bg)" stroke="#185378"/>
+  <rect x="1" y="1" width="818" height="318" rx="12" fill="url(#grid)"/>
+  <path d="M1 48H819" stroke="#1c5275"/>
+  <rect x="1" y="1" width="818" height="4" rx="2" fill="url(#accent)"/>
+  <circle cx="24" cy="25" r="5" fill="#20e3ff" filter="url(#glow)"/>
+  <text x="40" y="31" fill="#78ccff" font-family="Consolas,monospace" font-size="14" letter-spacing="1">7DSOLV.TERMINAL</text>
+  <text x="785" y="31" text-anchor="end" fill="#547594" font-family="Consolas,monospace" font-size="10">SECURE SESSION</text>
+
+  <g font-family="Consolas,monospace" font-size="15">
+    <text x="25" y="80" fill="#8aa6c2">&gt; Iniciando perfil...</text>
+    <text x="25" y="108" fill="#8aa6c2">&gt; Carregando módulos...</text>
+    <text x="25" y="140" fill="#d8e7ff">&gt; KONAET OS</text><text x="360" y="140" fill="#20f6a7">[ ONLINE ]</text>
+    <text x="25" y="168" fill="#d8e7ff">&gt; AETHER ARCHITECTURE</text><text x="360" y="168" fill="#20f6a7">[ ONLINE ]</text>
+    <text x="25" y="196" fill="#d8e7ff">&gt; INTELIGÊNCIA LOCAL</text><text x="360" y="196" fill="#20f6a7">[ ONLINE ]</text>
+    <text x="25" y="224" fill="#d8e7ff">&gt; CIÊNCIA / PESQUISA</text><text x="360" y="224" fill="#20f6a7">[ ONLINE ]</text>
+    <text x="25" y="252" fill="#d8e7ff">&gt; INFRAESTRUTURA</text><text x="360" y="252" fill="#9b72ff">[ BUILDING ]</text>
+    <text x="25" y="284" fill="#20f6a7">&gt; PERFIL CARREGADO COM SUCESSO.</text>
+    <text x="25" y="307" fill="#5faee3">7dsolv@github:~$</text><rect x="185" y="294" width="8" height="15" fill="#d8e7ff" class="cursor"/>
+  </g>
+
+  <g transform="translate(606 95)" fill="none">
+    <circle cx="78" cy="74" r="64" stroke="#173c5a"/>
+    <circle cx="78" cy="74" r="46" stroke="#448cff"/>
+    <circle cx="78" cy="74" r="25" stroke="#20e3ff" filter="url(#glow)"/>
+    <path d="M78 0V148M4 74H152M26 22L130 126M130 22L26 126" stroke="#174461" opacity=".75"/>
+    <circle cx="78" cy="74" r="7" fill="#20f6a7" stroke="#20f6a7" filter="url(#glow)"/>
+    <text x="78" y="174" text-anchor="middle" fill="#78ccff" font-family="Consolas,monospace" font-size="11">KONAET CORE // 7DS</text>
+  </g>
+</svg>

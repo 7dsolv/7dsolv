@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
+  <title id="title">Forjando o futuro</title>
+  <desc id="desc">Horizonte tecnológico de Konaet e Aether OS.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#061124"/><stop offset=".62" stop-color="#152950"/><stop offset="1" stop-color="#07101d"/></linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ff8d5d"/><stop offset=".5" stop-color="#ffd27c"/><stop offset="1" stop-color="#9b72ff"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#20e3ff"/><stop offset=".5" stop-color="#448cff"/><stop offset="1" stop-color="#9b72ff"/></linearGradient>
+    <pattern id="stars" width="97" height="47" patternUnits="userSpaceOnUse"><circle cx="10" cy="9" r=".6" fill="#fff"/><circle cx="72" cy="27" r=".7" fill="#76cfff"/><circle cx="40" cy="41" r=".45" fill="#9b72ff"/></pattern>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect x="1" y="1" width="1198" height="188" rx="14" fill="url(#sky)" stroke="#155277"/>
+  <rect x="1" y="1" width="1198" height="188" rx="14" fill="url(#stars)" opacity=".7"/>
+  <ellipse cx="628" cy="157" rx="260" ry="52" fill="url(#sun)" opacity=".22" filter="url(#glow)"/>
+  <path d="M0 159L93 117L164 153L239 106L321 151L403 93L476 143L540 116L612 157L674 101L747 143L821 82L905 149L976 111L1062 154L1147 103L1200 134V190H0Z" fill="#030914" stroke="#153956"/>
+  <path d="M370 176Q610 105 849 175" fill="none" stroke="url(#accent)" stroke-width="1.5" opacity=".7"/>
+  <g transform="translate(35 38)">
+    <text x="0" y="0" fill="#eef7ff" font-family="Consolas,monospace" font-size="18" font-weight="700" letter-spacing="4">“ FORJANDO O FUTURO ”</text>
+    <text x="0" y="35" fill="#c5d8eb" font-family="Segoe UI,Arial,sans-serif" font-size="14">Tecnologia como instrumento.</text>
+    <text x="0" y="58" fill="#c5d8eb" font-family="Segoe UI,Arial,sans-serif" font-size="14">Conhecimento como alicerce.</text>
+    <text x="0" y="81" fill="#c5d8eb" font-family="Segoe UI,Arial,sans-serif" font-size="14">Liberdade como objetivo.</text>
+    <text x="0" y="112" fill="#20e3ff" font-family="Consolas,monospace" font-size="13">— 7dsolv</text>
+  </g>
+  <g transform="translate(925 36)">
+    <circle cx="38" cy="43" r="36" fill="none" stroke="#20e3ff" stroke-width="2" filter="url(#glow)"/>
+    <path d="M38 2L48 29L77 43L48 56L38 84L28 56L0 43L28 29Z" fill="none" stroke="#9b72ff" stroke-width="2"/>
+    <circle cx="38" cy="43" r="14" fill="none" stroke="#20f6a7"/>
+    <text x="93" y="37" fill="#dceaff" font-family="Consolas,monospace" font-size="22" font-weight="700" letter-spacing="2">AETHER OS</text>
+    <text x="93" y="66" fill="#74caff" font-family="Consolas,monospace" font-size="22" font-weight="700" letter-spacing="2">KONAET</text>
+    <text x="255" y="101" text-anchor="end" fill="#829db8" font-family="Consolas,monospace" font-size="9">IDEIAS HOJE, INFRAESTRUTURA AMANHÃ.</text>
+  </g>
+  <path d="M14 189H1186" stroke="url(#accent)" stroke-width="2"/>
+</svg>

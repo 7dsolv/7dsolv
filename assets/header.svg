@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="310" viewBox="0 0 1200 310" role="img" aria-labelledby="title desc">
+  <title id="title">7DSOLV — Adilson Oliveira</title>
+  <desc id="desc">Banner cyberpunk azul com horizonte planetário, terminal e identidade profissional.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020711"/>
+      <stop offset="0.5" stop-color="#061628"/>
+      <stop offset="1" stop-color="#020813"/>
+    </linearGradient>
+    <radialGradient id="planet" cx="38%" cy="35%" r="65%">
+      <stop offset="0" stop-color="#d9f6ff"/>
+      <stop offset="0.08" stop-color="#7dd7ff"/>
+      <stop offset="0.22" stop-color="#2976c8"/>
+      <stop offset="0.5" stop-color="#102d67"/>
+      <stop offset="0.78" stop-color="#07132c"/>
+      <stop offset="1" stop-color="#02050b"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#20e3ff"/>
+      <stop offset="0.55" stop-color="#448cff"/>
+      <stop offset="1" stop-color="#9b72ff"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b2035"/>
+      <stop offset="1" stop-color="#04101d"/>
+    </linearGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#1b4e70" stroke-width="0.65" opacity="0.23"/>
+    </pattern>
+    <pattern id="stars" width="103" height="61" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="12" r="0.8" fill="#bce9ff"/>
+      <circle cx="61" cy="29" r="0.6" fill="#448cff"/>
+      <circle cx="91" cy="8" r="0.9" fill="#fff"/>
+      <circle cx="34" cy="54" r="0.5" fill="#9b72ff"/>
+    </pattern>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="planet-clip"><circle cx="995" cy="117" r="176"/></clipPath>
+    <style>
+      .blink { animation: blink 1.35s steps(2,end) infinite; }
+      .scan { animation: scan 6s linear infinite; }
+      .pulse { animation: pulse 2.6s ease-in-out infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+      @keyframes scan { from { transform: translateY(-250px); } to { transform: translateY(340px); } }
+      @keyframes pulse { 0%,100% { opacity: .45; } 50% { opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="310" rx="16" fill="url(#bg)"/>
+  <rect width="1200" height="310" rx="16" fill="url(#stars)" opacity="0.85"/>
+  <rect width="1200" height="310" rx="16" fill="url(#grid)"/>
+
+  <circle cx="995" cy="117" r="181" fill="none" stroke="#30bfff" stroke-width="2" opacity="0.65" filter="url(#glow)"/>
+  <circle cx="995" cy="117" r="176" fill="url(#planet)"/>
+  <g clip-path="url(#planet-clip)" fill="none" stroke="#8ee9ff" opacity="0.34">
+    <path d="M810 77Q920 135 1163 62" stroke-width="5"/>
+    <path d="M824 125Q985 191 1171 116" stroke-width="7"/>
+    <path d="M838 165Q1010 227 1167 164" stroke-width="4"/>
+    <path d="M863 31Q1014 81 1141 18" stroke-width="3"/>
+    <ellipse cx="995" cy="117" rx="125" ry="171" stroke-width="2"/>
+    <ellipse cx="995" cy="117" rx="62" ry="174" stroke-width="1.5"/>
+  </g>
+
+  <path d="M785 250Q995 194 1200 246V310H720Z" fill="#020710" opacity="0.96"/>
+  <path d="M720 286L766 242L799 267L846 212L884 246L932 186L978 239L1021 205L1076 254L1127 219L1200 265V310H720Z" fill="#040b17" stroke="#153453"/>
+  <path d="M728 286Q976 222 1200 278" fill="none" stroke="#20e3ff" stroke-width="1" opacity="0.7"/>
+
+  <g transform="translate(650 112)">
+    <rect x="0" y="0" width="205" height="121" rx="7" fill="url(#screen)" stroke="#448cff" stroke-width="2"/>
+    <rect x="10" y="11" width="185" height="92" rx="3" fill="#030a13" stroke="#173c59"/>
+    <path d="M19 28H96 M19 39H83 M19 50H116 M19 61H70 M19 72H104 M19 83H59" stroke="#20e3ff" stroke-width="2" opacity="0.72"/>
+    <path d="M126 27H182 M126 38H168 M126 49H178 M126 60H154 M126 71H184 M126 82H162" stroke="#9b72ff" stroke-width="2" opacity="0.64"/>
+    <path d="M82 121H123L130 139H75Z" fill="#071421" stroke="#448cff"/>
+    <path d="M55 139H150" stroke="#20e3ff" stroke-width="2"/>
+  </g>
+
+  <rect x="24" y="20" width="537" height="270" rx="12" fill="#030a14" opacity="0.81" stroke="#123958"/>
+  <path d="M24 82H561" stroke="#184d72"/>
+  <circle cx="47" cy="42" r="5" fill="#ff5f57"/><circle cx="66" cy="42" r="5" fill="#febc2e"/><circle cx="85" cy="42" r="5" fill="#28c840"/>
+  <text x="109" y="47" fill="#7396b9" font-family="Consolas,monospace" font-size="12">7dsolv@konaet:~</text>
+
+  <text x="48" y="139" fill="#eef7ff" font-family="Segoe UI,Arial,sans-serif" font-size="64" font-weight="800" letter-spacing="7">7DSOLV</text>
+  <path d="M48 157H445" stroke="url(#line)" stroke-width="3" filter="url(#glow)"/>
+  <text x="49" y="187" fill="#74caff" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="600" letter-spacing="2">ADILSON OLIVEIRA</text>
+  <text x="49" y="219" fill="#b9d4ee" font-family="Consolas,monospace" font-size="14" letter-spacing="1.4">SOFTWARE ENGINEERING · SYSTEMS RESEARCH</text>
+  <text x="49" y="245" fill="#20e3ff" font-family="Consolas,monospace" font-size="14" letter-spacing="1.4">AI · KONAET · AETHER OS</text>
+  <text x="49" y="273" fill="#20f6a7" font-family="Consolas,monospace" font-size="13">&gt; CONSTRUIR · COMPREENDER · SUPERAR</text>
+  <rect x="410" y="260" width="9" height="16" fill="#20f6a7" class="blink"/>
+
+  <g transform="translate(1135 28)" class="pulse">
+    <circle r="19" fill="none" stroke="#20e3ff"/>
+    <circle r="7" fill="#20e3ff" filter="url(#glow)"/>
+    <path d="M0-30V-23M0 23V30M-30 0H-23M23 0H30" stroke="#20e3ff"/>
+  </g>
+  <rect x="0" y="-12" width="1200" height="2" fill="#20e3ff" opacity="0.14" class="scan"/>
+  <rect x="1" y="1" width="1198" height="308" rx="15" fill="none" stroke="url(#line)" stroke-width="2"/>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300" role="img" aria-labelledby="title desc">
+  <title id="title">Linguagens mais usadas</title>
+  <desc id="desc">Métricas públicas geradas automaticamente para o perfil GitHub de 7dsolv.</desc>
+  <defs>
+    <linearGradient id="card-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071421"/>
+      <stop offset="1" stop-color="#040912"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#20e3ff"/>
+      <stop offset="0.52" stop-color="#448cff"/>
+      <stop offset="1" stop-color="#9b72ff"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#14314a" stroke-width="0.5" opacity="0.28"/>
+    </pattern>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="1" y="1" width="498" height="298" rx="14" fill="url(#card-bg)" stroke="#134f72"/>
+  <rect x="1" y="1" width="498" height="298" rx="14" fill="url(#grid)"/>
+  <path d="M14 1H486" stroke="url(#accent)" stroke-width="2"/>
+  
+  <circle cx="22" cy="25" r="5" fill="#20e3ff" filter="url(#glow)"/>
+  <text x="38" y="31" fill="#20e3ff" font-family="Consolas,monospace" font-size="14" letter-spacing="1">LINGUAGENS MAIS USADAS</text>
+  <text x="478" y="31" text-anchor="end" fill="#7e9ab8" font-family="Consolas,monospace" font-size="10">POR BYTES</text>
+  
+  <circle cx="25" cy="74" r="5" fill="#f89820"/>
+  <text x="40" y="78" fill="#d8e7ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">Java</text>
+  <rect x="154" y="64" width="244" height="13" rx="4" fill="#17283a"/>
+  <rect x="154" y="64" width="120.9" height="13" rx="4" fill="#f89820"/>
+  <text x="424" y="76" fill="#d8e7ff" font-family="Consolas,monospace" font-size="12">49.6%</text>
+  <circle cx="25" cy="108" r="5" fill="#e34c26"/>
+  <text x="40" y="112" fill="#d8e7ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">HTML</text>
+  <rect x="154" y="98" width="244" height="13" rx="4" fill="#17283a"/>
+  <rect x="154" y="98" width="33.5" height="13" rx="4" fill="#e34c26"/>
+  <text x="424" y="110" fill="#d8e7ff" font-family="Consolas,monospace" font-size="12">13.7%</text>
+  <circle cx="25" cy="142" r="5" fill="#ffd343"/>
+  <text x="40" y="146" fill="#d8e7ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">Python</text>
+  <rect x="154" y="132" width="244" height="13" rx="4" fill="#17283a"/>
+  <rect x="154" y="132" width="29.7" height="13" rx="4" fill="#ffd343"/>
+  <text x="424" y="144" fill="#d8e7ff" font-family="Consolas,monospace" font-size="12">12.2%</text>
+  <circle cx="25" cy="176" r="5" fill="#e38c00"/>
+  <text x="40" y="180" fill="#d8e7ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">TSQL</text>
+  <rect x="154" y="166" width="244" height="13" rx="4" fill="#17283a"/>
+  <rect x="154" y="166" width="29.5" height="13" rx="4" fill="#e38c00"/>
+  <text x="424" y="178" fill="#d8e7ff" font-family="Consolas,monospace" font-size="12">12.1%</text>
+  <circle cx="25" cy="210" r="5" fill="#5f93d4"/>
+  <text x="40" y="214" fill="#d8e7ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">C++</text>
+  <rect x="154" y="200" width="244" height="13" rx="4" fill="#17283a"/>
+  <rect x="154" y="200" width="11.7" height="13" rx="4" fill="#5f93d4"/>
+  <text x="424" y="212" fill="#d8e7ff" font-family="Consolas,monospace" font-size="12"> 4.8%</text>
+  <circle cx="25" cy="244" r="5" fill="#448cff"/>
+  <text x="40" y="248" fill="#d8e7ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">Mermaid</text>
+  <rect x="154" y="234" width="244" height="13" rx="4" fill="#17283a"/>
+  <rect x="154" y="234" width="4.7" height="13" rx="4" fill="#448cff"/>
+  <text x="424" y="246" fill="#d8e7ff" font-family="Consolas,monospace" font-size="12"> 1.9%</text>
+</svg>

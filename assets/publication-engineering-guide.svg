@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="350" viewBox="0 0 560 350" role="img" aria-labelledby="title desc">
+  <title id="title">Konaet OS — Guia de Engenharia</title>
+  <desc id="desc">Prévia visual da publicação técnica sobre o Konaet OS.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071522"/><stop offset="1" stop-color="#030914"/></linearGradient>
+    <linearGradient id="cover" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#11204b"/><stop offset=".53" stop-color="#174c83"/><stop offset="1" stop-color="#05a9c8"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#20e3ff"/><stop offset="1" stop-color="#448cff"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect x="1" y="1" width="558" height="348" rx="13" fill="url(#bg)" stroke="#17628a"/>
+  <path d="M14 1H546" stroke="url(#accent)" stroke-width="2"/>
+  <text x="22" y="30" fill="#20e3ff" font-family="Consolas,monospace" font-size="12" letter-spacing="1.2">PUBLICAÇÃO // ENGINEERING GUIDE</text>
+
+  <g transform="translate(23 49)">
+    <rect width="206" height="275" rx="9" fill="url(#cover)" stroke="#72dfff"/>
+    <circle cx="179" cy="69" r="78" fill="none" stroke="#fff" opacity=".09" stroke-width="18"/>
+    <circle cx="179" cy="69" r="48" fill="none" stroke="#fff" opacity=".14"/>
+    <text x="18" y="31" fill="#54f4ff" font-family="Consolas,monospace" font-size="8" font-weight="700" letter-spacing="1.5">KONAET OS ENGINEERING</text>
+    <text x="18" y="76" fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="800">Guia de</text>
+    <text x="18" y="106" fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="800">Engenharia</text>
+    <text x="18" y="137" fill="#d7ebff" font-family="Segoe UI,Arial,sans-serif" font-size="10">Kernel próprio, boot UEFI,</text>
+    <text x="18" y="153" fill="#d7ebff" font-family="Segoe UI,Arial,sans-serif" font-size="10">memória e arquitetura verificável.</text>
+    <rect x="18" y="211" width="135" height="25" rx="12" fill="#061326" opacity=".67" stroke="#8eeeff"/>
+    <text x="85" y="227" text-anchor="middle" fill="#fff" font-family="Consolas,monospace" font-size="8" font-weight="700">0.3.4 · MERIDIAN</text>
+    <text x="18" y="260" fill="#e5f4ff" font-family="Consolas,monospace" font-size="8">x86-64 UEFI · 2026</text>
+  </g>
+
+  <g transform="translate(250 50)">
+    <text x="0" y="18" fill="#edf7ff" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">O que você vai encontrar</text>
+    <path d="M0 33H276" stroke="#184c70"/>
+    <g font-family="Segoe UI,Arial,sans-serif" font-size="12">
+      <circle cx="8" cy="60" r="4" fill="#20e3ff"/><text x="22" y="64" fill="#c9dbee">Cadeia de boot UEFI completa</text>
+      <circle cx="8" cy="91" r="4" fill="#20e3ff"/><text x="22" y="95" fill="#c9dbee">Serviços de memória Meridian</text>
+      <circle cx="8" cy="122" r="4" fill="#20e3ff"/><text x="22" y="126" fill="#c9dbee">CPU, interrupções e entrada PS/2</text>
+      <circle cx="8" cy="153" r="4" fill="#20e3ff"/><text x="22" y="157" fill="#c9dbee">Control Center e workspace</text>
+      <circle cx="8" cy="184" r="4" fill="#20e3ff"/><text x="22" y="188" fill="#c9dbee">Estado real e limites técnicos</text>
+    </g>
+    <rect x="0" y="214" width="276" height="47" rx="7" fill="#0a2033" stroke="#1b668e"/>
+    <text x="15" y="233" fill="#69cfff" font-family="Consolas,monospace" font-size="9">FORMATO</text>
+    <text x="15" y="251" fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="12">PDF técnico · leitura no GitHub</text>
+    <rect x="0" y="274" width="276" height="38" rx="7" fill="url(#accent)"/>
+    <text x="138" y="298" text-anchor="middle" fill="#02101b" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="800">CLIQUE PARA LER  →</text>
+  </g>
+</svg>

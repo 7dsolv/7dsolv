@@ -198,7 +198,7 @@ Arquitetura, evidências, limites e roadmap
 
 <div align="center">
 
-[![Atualizar perfil](https://github.com/7dsolv/7dsolv/actions/workflows/update-profile.yml/badge.svg)](https://github.com/7dsolv/7dsolv/actions/workflows/update-profile.yml)
+
 
 </div>
 

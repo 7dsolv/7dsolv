@@ -117,13 +117,13 @@ Pesquisa, ideias e protótipos na interseção entre computação, matemática e
 
 ## Arquivos, pesquisas e publicações
 
-<a href="https://drive.google.com/drive/folders/13K20ctDIS_xR-s3Zp3Yle_kPhxTTIY_f?usp=sharing">
+<a href="https://drive.google.com/drive/folders/13K20ctDlS_xR-s3Zp3Yle_kPhxTTYf_v?hl=pt-br">
   <img src="./assets/research-archive.svg" width="100%" alt="Google Drive — arquivo de pesquisas de Adilson Oliveira" />
 </a>
 
 <div align="center">
 
-[![Acessar o Drive](https://img.shields.io/badge/ABRIR_GOOGLE_DRIVE-0b5cff?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/13K20ctDIS_xR-s3Zp3Yle_kPhxTTIY_f?usp=sharing)
+[![Acessar o Drive](https://img.shields.io/badge/ABRIR_GOOGLE_DRIVE-0b5cff?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/13K20ctDlS_xR-s3Zp3Yle_kPhxTTYf_v?hl=pt-br)
 
 </div>
 

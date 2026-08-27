@@ -53,7 +53,7 @@ Não cole os arquivos SVG diretamente dentro do `README.md`. O GitHub remove ani
 
 ## Liberar o Google Drive para visitantes
 
-O link informado responde como privado para visitantes sem login. No Google Drive:
+O link informado foi testado e responde publicamente. Se no futuro o acesso parar de funcionar, confira no Google Drive:
 
 1. Clique com o botão direito na pasta `Engenharia.7dsolv`.
 2. Abra **Compartilhar**.

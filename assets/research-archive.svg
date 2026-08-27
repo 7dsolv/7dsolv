@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+  <title id="title">Google Drive — Research Archive</title>
+  <desc id="desc">Painel do arquivo de pesquisas com documentos, PDFs, imagens, cálculos e projetos em destaque.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061522"/><stop offset="1" stop-color="#030812"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#0b5cff"/><stop offset="1" stop-color="#2b8cff"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#20e3ff"/><stop offset=".55" stop-color="#448cff"/><stop offset="1" stop-color="#9b72ff"/></linearGradient>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#173650" stroke-width=".5" opacity=".27"/></pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="388" rx="15" fill="url(#bg)" stroke="#165273"/>
+  <rect x="1" y="1" width="1198" height="388" rx="15" fill="url(#grid)"/>
+  <path d="M15 1H1185" stroke="url(#accent)" stroke-width="2"/>
+  <circle cx="24" cy="27" r="5" fill="#20e3ff" filter="url(#glow)"/>
+  <text x="41" y="33" fill="#20e3ff" font-family="Consolas,monospace" font-size="15" letter-spacing="1.4">ARQUIVOS E PESQUISAS // RESEARCH ARCHIVE</text>
+  <text x="1173" y="33" text-anchor="end" fill="#20f6a7" font-family="Consolas,monospace" font-size="11">● ACESSO ONLINE</text>
+
+  <g transform="translate(27 67)">
+    <rect width="374" height="293" rx="12" fill="#06111d" stroke="#174f70"/>
+
+    <!-- Google Drive mark -->
+    <g transform="translate(29 28)">
+      <path d="M31 0H58L88 52H61Z" fill="#ffd04a"/>
+      <path d="M31 0L0 54L14 78L45 24Z" fill="#13b66a"/>
+      <path d="M14 78H74L88 52H28Z" fill="#4285f4"/>
+    </g>
+    <text x="137" y="58" fill="#f2f7ff" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="650">Google Drive</text>
+    <text x="137" y="87" fill="#78c9ff" font-family="Consolas,monospace" font-size="14" letter-spacing="1">ENGENHARIA.7DSOLV</text>
+    <text x="28" y="129" fill="#cbdcf0" font-family="Segoe UI,Arial,sans-serif" font-size="14">Documentos, pesquisas, projetos, artigos,</text>
+    <text x="28" y="151" fill="#cbdcf0" font-family="Segoe UI,Arial,sans-serif" font-size="14">imagens, esquemas e materiais completos.</text>
+
+    <g font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#d8e7ff">
+      <path d="M31 181h14l5 5h18v20H31Z" fill="#20e3ff" opacity=".85"/><text x="79" y="199">00 · LEIA-ME / ÍNDICE</text>
+      <path d="M31 218h14l5 5h18v20H31Z" fill="#448cff" opacity=".9"/><text x="79" y="236">01 · SOFTWARE</text>
+      <path d="M211 181h14l5 5h18v20H211Z" fill="#9b72ff" opacity=".9"/><text x="259" y="199">02 · PDF E DOCS</text>
+      <path d="M211 218h14l5 5h18v20H211Z" fill="#20f6a7" opacity=".85"/><text x="259" y="236">03 · IMAGENS</text>
+    </g>
+    <rect x="27" y="257" width="320" height="42" rx="7" fill="url(#blue)"/>
+    <text x="187" y="283" text-anchor="middle" fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="650">ACESSAR MEU DRIVE  →</text>
+  </g>
+
+  <g transform="translate(424 67)">
+    <rect width="749" height="293" rx="12" fill="#06111d" stroke="#174f70"/>
+    <text x="24" y="34" fill="#78c9ff" font-family="Consolas,monospace" font-size="13" letter-spacing="1.2">PROJETOS VISÍVEIS NO ECOSSISTEMA</text>
+    <text x="724" y="34" text-anchor="end" fill="#6685a3" font-family="Consolas,monospace" font-size="10">STATUS // ACTIVE</text>
+
+    <g transform="translate(22 55)">
+      <rect width="342" height="91" rx="9" fill="#081725" stroke="#17628a"/>
+      <rect x="0" y="0" width="5" height="91" rx="2" fill="#20e3ff"/>
+      <circle cx="34" cy="30" r="14" fill="none" stroke="#20e3ff" stroke-width="2"/><path d="M27 30h14M34 23v14" stroke="#20e3ff"/>
+      <text x="58" y="27" fill="#ecf7ff" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700">KONAET OS</text>
+      <text x="58" y="48" fill="#78a5c7" font-family="Consolas,monospace" font-size="11">KERNEL · UEFI · RING 3 · IPC</text>
+      <text x="22" y="75" fill="#20f6a7" font-family="Consolas,monospace" font-size="10">● SISTEMA OPERACIONAL EM DESENVOLVIMENTO</text>
+    </g>
+
+    <g transform="translate(384 55)">
+      <rect width="342" height="91" rx="9" fill="#081725" stroke="#4f43a5"/>
+      <rect x="0" y="0" width="5" height="91" rx="2" fill="#9b72ff"/>
+      <circle cx="34" cy="30" r="14" fill="none" stroke="#9b72ff" stroke-width="2"/><path d="M26 34q8-20 16 0M27 27h14" fill="none" stroke="#9b72ff"/>
+      <text x="58" y="27" fill="#ecf7ff" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700">AGIMATHEMATIC</text>
+      <text x="58" y="48" fill="#78a5c7" font-family="Consolas,monospace" font-size="11">IA · MATEMÁTICA · MODELOS</text>
+      <text x="22" y="75" fill="#c39cff" font-family="Consolas,monospace" font-size="10">● PESQUISA COMPUTACIONAL ATIVA</text>
+    </g>
+
+    <g transform="translate(22 160)">
+      <rect width="342" height="91" rx="9" fill="#081725" stroke="#17628a"/>
+      <rect x="0" y="0" width="5" height="91" rx="2" fill="#448cff"/>
+      <circle cx="34" cy="30" r="14" fill="none" stroke="#448cff" stroke-width="2"/><circle cx="30" cy="27" r="3" fill="#448cff"/><circle cx="39" cy="34" r="3" fill="#448cff"/><path d="M30 27L39 34" stroke="#448cff"/>
+      <text x="58" y="27" fill="#ecf7ff" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700">IA NEURAL</text>
+      <text x="58" y="48" fill="#78a5c7" font-family="Consolas,monospace" font-size="11">REDES · INTELIGÊNCIA LOCAL</text>
+      <text x="22" y="75" fill="#68a8ff" font-family="Consolas,monospace" font-size="10">● EXPERIMENTOS E ARQUITETURAS</text>
+    </g>
+
+    <g transform="translate(384 160)">
+      <rect width="342" height="91" rx="9" fill="#081725" stroke="#17806b"/>
+      <rect x="0" y="0" width="5" height="91" rx="2" fill="#20f6a7"/>
+      <circle cx="34" cy="30" r="14" fill="none" stroke="#20f6a7"/><ellipse cx="34" cy="30" rx="5" ry="14" fill="none" stroke="#20f6a7"/><path d="M20 30h28" stroke="#20f6a7"/>
+      <text x="58" y="27" fill="#ecf7ff" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700">REALIDADE QUÂNTICA</text>
+      <text x="58" y="48" fill="#78a5c7" font-family="Consolas,monospace" font-size="11">FÍSICA · SIMULAÇÃO · TEORIA</text>
+      <text x="22" y="75" fill="#20f6a7" font-family="Consolas,monospace" font-size="10">● PESQUISA E PROTÓTIPOS</text>
+    </g>
+  </g>
+</svg>

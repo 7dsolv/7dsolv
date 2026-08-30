@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/header.svg" width="100%" alt="7DSOLV — Adilson Oliveira, Software Engineering, Systems Research, AI, Konaet e Aether OS" />
+<img src="./assets/header.svg" width="100%" alt="7DSOLV — Adilson Oliveira, Software Engineering, Systems Research, AI e ecossistema Konaet" />
 
 <br />
 
@@ -30,7 +30,7 @@
 Brasil · São Paulo  
 Software Engineering  
 Systems Research  
-Konaet · Aether OS · IA
+Konaet Cover · Sistemas · IA
 
 <a href="https://github.com/7dsolv"><img src="https://img.shields.io/badge/GitHub-07111f?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 <a href="https://www.linkedin.com/in/adilson-oliveira-779490283"><img src="https://img.shields.io/badge/LinkedIn-07111f?style=for-the-badge&logo=linkedin&logoColor=20e3ff" alt="LinkedIn" /></a>
@@ -46,7 +46,7 @@ Konaet · Aether OS · IA
 ```text
 FOCO            ATIVO
 ESTUDOS         ATIVO
-KONAET OS       EM DESENVOLVIMENTO
+KONAET COVER    EM DESENVOLVIMENTO
 IA LOCAL        ATIVO
 PESQUISA        ATIVO
 INFRAESTRUTURA  EM EVOLUÇÃO
@@ -58,23 +58,39 @@ INFRAESTRUTURA  EM EVOLUÇÃO
 
 ## Sobre mim
 
-Construo sistemas a partir dos primeiros princípios, unindo engenharia de software, arquitetura de sistemas, inteligência artificial e pesquisa científica. Meu foco atual é o **Konaet OS**: um sistema operacional x86_64/UEFI independente, desenvolvido em C e Assembly, com kernel próprio, isolamento, IPC e interface gráfica nativa.
+Construo sistemas a partir dos primeiros princípios, unindo engenharia de software, arquitetura de sistemas, inteligência artificial e pesquisa científica. Meu projeto principal é o **Konaet Cover**: uma plataforma experimental de proteção de dispositivos com aplicativo Android, API, simulação de risco, auditoria causal e ancoragem verificável.
 
 > “Grandes sistemas não nascem prontos, mas da soma de pequenas verdades diárias.”
 
 ## Sistemas em desenvolvimento
 
+<a href="https://github.com/7dsolv/konaet-cover">
+  <img src="./assets/konaet-cover.png" width="100%" alt="Konaet — engenharia de sistemas, inteligência artificial e colaboração aberta" />
+</a>
+
+<div align="center">
+
+### KONAET · projeto principal
+
+[![Projeto principal](https://img.shields.io/badge/PROJETO_PRINCIPAL-KONAET_COVER-0b5cff?style=for-the-badge&labelColor=07111f)](https://github.com/7dsolv/konaet-cover)
+[![Contribuições](https://img.shields.io/badge/CONTRIBUIÇÕES-BEM--VINDAS-00c896?style=for-the-badge&labelColor=07111f)](https://github.com/7dsolv/konaet-cover/issues)
+[![Código aberto](https://img.shields.io/badge/CÓDIGO-ABERTO-7b5cff?style=for-the-badge&labelColor=07111f)](https://github.com/7dsolv?tab=repositories)
+
+Engenharia de sistemas, computação independente e inteligência local construídas de forma verificável e colaborativa.
+
+</div>
+
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### [`KONAET OS`](https://github.com/7dsolv/konaet)
+### [`KONAET COVER`](https://github.com/7dsolv/konaet-cover)
 
-Sistema operacional independente com kernel próprio, boot UEFI, memória virtual, processos Ring 3, IPC, escalonamento preemptivo e desktop nativo.
+Plataforma experimental com Android, API NestJS, motor de risco FastAPI, auditoria causal e checkpoints em Solidity.
 
-`C` `Assembly` `UEFI` `x86_64` `Kernel`
+`Kotlin` `TypeScript` `Python` `Solidity` `PostgreSQL`
 
-[![Abrir projeto](https://img.shields.io/badge/ABRIR_PROJETO-0b5cff?style=for-the-badge&logo=github&logoColor=white)](https://github.com/7dsolv/konaet)
+[![Abrir projeto](https://img.shields.io/badge/ABRIR_PROJETO-0b5cff?style=for-the-badge&logo=github&logoColor=white)](https://github.com/7dsolv/konaet-cover)
 
 </td>
 <td width="50%" valign="top">
@@ -198,7 +214,7 @@ Arquitetura, evidências, limites e roadmap
 
 <div align="center">
 
-
+[![Atualizar perfil](https://github.com/7dsolv/7dsolv/actions/workflows/update-profile.yml/badge.svg)](https://github.com/7dsolv/7dsolv/actions/workflows/update-profile.yml)
 
 </div>
 

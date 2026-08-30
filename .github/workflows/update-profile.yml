@@ -1,0 +1,53 @@
+name: Atualizar perfil
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+  push:
+    branches:
+      - main
+      - principal
+    paths:
+      - "scripts/generate_profile_assets.py"
+      - ".github/workflows/update-profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-profile-assets
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gerar métricas públicas
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USERNAME: ${{ github.repository_owner }}
+        run: python scripts/generate_profile_assets.py
+
+      - name: Publicar alterações
+        shell: bash
+        run: |
+          if git diff --quiet -- assets/metrics.svg assets/languages.svg assets/contributions.svg; then
+            echo "Nenhuma alteração nas métricas."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/metrics.svg assets/languages.svg assets/contributions.svg
+          git commit -m "chore: atualizar métricas do perfil"
+          git push

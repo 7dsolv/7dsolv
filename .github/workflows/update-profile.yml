@@ -7,7 +7,6 @@ on:
   push:
     branches:
       - main
-      - principal
     paths:
       - "scripts/generate_profile_assets.py"
       - ".github/workflows/update-profile.yml"
@@ -26,10 +25,10 @@ jobs:
 
     steps:
       - name: Baixar o repositório
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Configurar Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 

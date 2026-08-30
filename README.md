@@ -76,6 +76,11 @@ Construo sistemas a partir dos primeiros princípios, unindo engenharia de softw
 [![Contribuições](https://img.shields.io/badge/CONTRIBUIÇÕES-BEM--VINDAS-00c896?style=for-the-badge&labelColor=07111f)](https://github.com/7dsolv/konaet-cover/issues)
 [![Código aberto](https://img.shields.io/badge/CÓDIGO-ABERTO-7b5cff?style=for-the-badge&labelColor=07111f)](https://github.com/7dsolv?tab=repositories)
 
+[![CI do Konaet Cover](https://github.com/7dsolv/konaet-cover/actions/workflows/ci.yml/badge.svg)](https://github.com/7dsolv/konaet-cover/actions/workflows/ci.yml)
+[![Licença MIT](https://img.shields.io/github/license/7dsolv/konaet-cover?style=flat-square&color=00c896)](https://github.com/7dsolv/konaet-cover/blob/main/LICENSE)
+[![Issues abertas](https://img.shields.io/github/issues/7dsolv/konaet-cover?style=flat-square&color=0b5cff)](https://github.com/7dsolv/konaet-cover/issues)
+[![Discussões](https://img.shields.io/github/discussions/7dsolv/konaet-cover?style=flat-square&color=7b5cff)](https://github.com/7dsolv/konaet-cover/discussions)
+
 Engenharia de sistemas, computação independente e inteligência local construídas de forma verificável e colaborativa.
 
 </div>
@@ -159,7 +164,7 @@ As capas e os resumos ficam visíveis aqui no perfil. Clique em uma publicação
 Release 0.3.4 · x86-64 UEFI
 
 [![Ler PDF](https://img.shields.io/badge/LER_PDF_AGORA-00a8e8?style=for-the-badge&logo=readthedocs&logoColor=white)](./publications/konaet-os-engineering-guide.pdf)
-[![Baixar](https://img.shields.io/badge/BAIXAR-07111f?style=for-the-badge&logo=files&logoColor=20e3ff)](https://raw.githubusercontent.com/7dsolv/7dsolv/principal/publications/konaet-os-engineering-guide.pdf)
+[![Baixar](https://img.shields.io/badge/BAIXAR-07111f?style=for-the-badge&logo=files&logoColor=20e3ff)](https://raw.githubusercontent.com/7dsolv/7dsolv/main/publications/konaet-os-engineering-guide.pdf)
 
 </td>
 <td width="50%" align="center" valign="top">
@@ -172,7 +177,7 @@ Release 0.3.4 · x86-64 UEFI
 Arquitetura, evidências, limites e roadmap
 
 [![Ler PDF](https://img.shields.io/badge/LER_PDF_AGORA-7b5cff?style=for-the-badge&logo=readthedocs&logoColor=white)](./publications/konaet-os-complete-technical-manual.pdf)
-[![Baixar](https://img.shields.io/badge/BAIXAR-07111f?style=for-the-badge&logo=files&logoColor=20e3ff)](https://raw.githubusercontent.com/7dsolv/7dsolv/principal/publications/konaet-os-complete-technical-manual.pdf)
+[![Baixar](https://img.shields.io/badge/BAIXAR-07111f?style=for-the-badge&logo=files&logoColor=20e3ff)](https://raw.githubusercontent.com/7dsolv/7dsolv/main/publications/konaet-os-complete-technical-manual.pdf)
 
 </td>
 </tr>

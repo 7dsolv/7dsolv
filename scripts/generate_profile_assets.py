@@ -15,6 +15,7 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -222,21 +223,22 @@ def render_metrics(user: dict[str, Any], repositories: list[dict[str, Any]], con
     stars = sum(int(repo.get("stargazers_count", 0)) for repo in owned)
     forks = sum(int(repo.get("forks_count", 0)) for repo in owned)
     metrics = [
-        ("REPOSITÓRIOS", int(user.get("public_repos", len(repositories))), CYAN),
-        ("CONTRIBUIÇÕES", contributions, GREEN),
+        ("REPOSITÓRIOS PÚBLICOS", len(repositories), CYAN),
+        ("CONTRIBUIÇÕES · 365D", contributions, GREEN),
         ("SEGUIDORES", int(user.get("followers", 0)), PURPLE),
-        ("ESTRELAS + FORKS", stars + forks, BLUE),
+        ("ESTRELAS / FORKS", f"{compact_number(stars)} / {compact_number(forks)}", BLUE),
     ]
     cards: list[str] = []
     for index, (label, value, color) in enumerate(metrics):
         x = 24 + index * 294
+        display_value = compact_number(value) if isinstance(value, int) else value
         cards.append(f'''
     <g transform="translate({x} 62)">
       <rect width="270" height="104" rx="10" fill="#06101c" stroke="#174765"/>
       <path d="M0 10V0H10 M260 0H270V10 M0 94V104H10 M260 104H270V94" fill="none" stroke="{color}" stroke-width="1.5"/>
       <circle cx="30" cy="35" r="9" fill="none" stroke="{color}" stroke-width="2" filter="url(#glow)"/>
       <text x="51" y="40" fill="{MUTED}" font-family="Segoe UI,Arial,sans-serif" font-size="13" letter-spacing="1">{esc(label)}</text>
-      <text x="28" y="82" fill="{TEXT}" font-family="Segoe UI,Arial,sans-serif" font-size="32" font-weight="700">{esc(compact_number(int(value)))}</text>
+      <text x="28" y="82" fill="{TEXT}" font-family="Segoe UI,Arial,sans-serif" font-size="32" font-weight="700">{esc(display_value)}</text>
     </g>''')
     updated = datetime.now(timezone.utc).strftime("%d/%m/%Y %H:%M UTC")
     body = f'''
@@ -244,7 +246,7 @@ def render_metrics(user: dict[str, Any], repositories: list[dict[str, Any]], con
   <text x="40" y="33" fill="{CYAN}" font-family="Consolas,monospace" font-size="15" letter-spacing="1.2">GITHUB // TELEMETRIA PÚBLICA</text>
   <text x="1176" y="33" text-anchor="end" fill="{MUTED}" font-family="Consolas,monospace" font-size="11">ATUALIZADO {esc(updated)}</text>
   {''.join(cards)}
-  <text x="24" y="194" fill="{MUTED}" font-family="Consolas,monospace" font-size="10">FONTE: API OFICIAL DO GITHUB · DADOS DE REPOSITÓRIOS PÚBLICOS</text>'''
+  <text x="24" y="194" fill="{MUTED}" font-family="Consolas,monospace" font-size="10">FONTE: API OFICIAL DO GITHUB · REPOSITÓRIOS DO TITULAR · CONTRIBUIÇÕES PÚBLICAS DOS ÚLTIMOS 365 DIAS</text>'''
     return svg_shell(1200, 210, "GitHub stats", body)
 
 
@@ -298,7 +300,7 @@ def render_contributions(total: int, days: list[dict[str, Any]], start: date, en
     cell = 8
     gap = 3
     x0 = 42
-    y0 = 78
+    y0 = 88
     palette = ["#132235", "#075a54", "#0a8f72", "#18c98f", GREEN]
     squares: list[str] = []
     month_labels: list[str] = []
@@ -311,21 +313,50 @@ def render_contributions(total: int, days: list[dict[str, Any]], start: date, en
                 continue
             day = by_date.get(current, {})
             level = contribution_level(day)
+            count = int(day.get("contributionCount", 0))
             x = x0 + week * (cell + gap)
             y = y0 + weekday * (cell + gap)
             squares.append(
-                f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2" fill="{palette[level]}"><title>{esc(current.isoformat())}</title></rect>'
+                f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2" fill="{palette[level]}"><title>{esc(current.isoformat())} · {count} contribuições</title></rect>'
             )
             month_key = (current.year, current.month)
             if current.day <= 7 and month_key not in seen_months:
                 seen_months.add(month_key)
                 month = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"][current.month - 1]
                 month_labels.append(
-                    f'<text x="{x}" y="66" fill="{MUTED}" font-family="Consolas,monospace" font-size="9">{month}</text>'
+                    f'<text x="{x}" y="76" fill="{MUTED}" font-family="Consolas,monospace" font-size="9">{month}</text>'
                 )
 
+    ordered_days = [by_date[current] for current in sorted(by_date) if start <= current <= end]
+    active_days = sum(int(day.get("contributionCount", 0)) > 0 for day in ordered_days)
+    best_day = max((int(day.get("contributionCount", 0)) for day in ordered_days), default=0)
+    longest_streak = 0
+    current_streak = 0
+    for day in ordered_days:
+        if int(day.get("contributionCount", 0)) > 0:
+            current_streak += 1
+            longest_streak = max(longest_streak, current_streak)
+        else:
+            current_streak = 0
+
+    summary = [
+        ("DIAS ATIVOS", active_days, CYAN),
+        ("MELHOR DIA", best_day, GREEN),
+        ("MAIOR SEQUÊNCIA", f"{longest_streak}d", PURPLE),
+    ]
+    summary_cards: list[str] = []
+    for index, (label, value, color) in enumerate(summary):
+        x = 24 + index * 222
+        summary_cards.append(f'''
+  <g transform="translate({x} 200)">
+    <rect width="208" height="70" rx="9" fill="#06101c" stroke="#174765"/>
+    <circle cx="18" cy="21" r="4" fill="{color}" filter="url(#glow)"/>
+    <text x="31" y="25" fill="{MUTED}" font-family="Consolas,monospace" font-size="9" letter-spacing="0.8">{esc(label)}</text>
+    <text x="16" y="57" fill="{TEXT}" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700">{esc(value)}</text>
+  </g>''')
+
     legend = "".join(
-        f'<rect x="{535 + index * 14}" y="178" width="9" height="9" rx="2" fill="{color}"/>'
+        f'<rect x="{535 + index * 14}" y="180" width="9" height="9" rx="2" fill="{color}"/>'
         for index, color in enumerate(palette)
     )
     body = f'''
@@ -333,18 +364,20 @@ def render_contributions(total: int, days: list[dict[str, Any]], start: date, en
   <text x="38" y="31" fill="{CYAN}" font-family="Consolas,monospace" font-size="14" letter-spacing="1">CONTRIBUIÇÕES</text>
   <text x="678" y="31" text-anchor="end" fill="{TEXT}" font-family="Consolas,monospace" font-size="13">{esc(total)} NO PERÍODO</text>
   {''.join(month_labels)}
-  <text x="25" y="90" fill="{MUTED}" font-family="Consolas,monospace" font-size="9">D</text>
-  <text x="25" y="112" fill="{MUTED}" font-family="Consolas,monospace" font-size="9">T</text>
-  <text x="25" y="134" fill="{MUTED}" font-family="Consolas,monospace" font-size="9">Q</text>
+  <text x="25" y="100" fill="{MUTED}" font-family="Consolas,monospace" font-size="9">D</text>
+  <text x="25" y="122" fill="{MUTED}" font-family="Consolas,monospace" font-size="9">T</text>
+  <text x="25" y="144" fill="{MUTED}" font-family="Consolas,monospace" font-size="9">Q</text>
   {''.join(squares)}
-  <text x="500" y="187" text-anchor="end" fill="{MUTED}" font-family="Consolas,monospace" font-size="9">MENOS</text>
+  <text x="500" y="189" text-anchor="end" fill="{MUTED}" font-family="Consolas,monospace" font-size="9">MENOS</text>
   {legend}
-  <text x="610" y="187" fill="{MUTED}" font-family="Consolas,monospace" font-size="9">MAIS</text>
-  <text x="24" y="207" fill="{MUTED}" font-family="Consolas,monospace" font-size="9">{esc(start.isoformat())} → {esc(end.isoformat())} · CONTRIBUIÇÕES PÚBLICAS</text>'''
-    return svg_shell(700, 220, "Calendário de contribuições", body)
+  <text x="610" y="189" fill="{MUTED}" font-family="Consolas,monospace" font-size="9">MAIS</text>
+{''.join(summary_cards)}
+  <text x="24" y="289" fill="{MUTED}" font-family="Consolas,monospace" font-size="9">{esc(start.isoformat())} → {esc(end.isoformat())} · JANELA MÓVEL DE 365 DIAS · CONTRIBUIÇÕES PÚBLICAS</text>'''
+    return svg_shell(700, 300, "Calendário de contribuições", body)
 
 
 def write_asset(name: str, content: str) -> None:
+    ET.fromstring(content)
     target = ASSETS / name
     target.write_text(content, encoding="utf-8", newline="\n")
     print(f"generated {target.relative_to(ROOT)}")

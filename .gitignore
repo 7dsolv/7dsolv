@@ -3,5 +3,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Projeto independente mantido em seu próprio repositório.
+# Projetos independentes mantidos em seus próprios repositórios.
 /konaet cover/
+/Neural_IA/

@@ -113,13 +113,14 @@ Explorações de inteligência artificial, raciocínio matemático e arquitetura
 <tr>
 <td width="50%" valign="top">
 
-### [`IA Neural`](https://github.com/7dsolv/IA_Neural)
+### [`IA Neural`](https://7dsolv.github.io/IA_Neural/)
 
-Experimentos com redes neurais, inteligência local e construção de modelos voltados à autonomia computacional.
+Laboratório open source para treinar redes neurais no navegador, visualizar decisões e estudar backpropagation com testes reproduzíveis.
 
-`Python` `Neural Networks` `AI` `Local First`
+`JavaScript` `Python` `Neural Networks` `GitHub Pages`
 
-[![Abrir projeto](https://img.shields.io/badge/ABRIR_PROJETO-0b5cff?style=for-the-badge&logo=github&logoColor=white)](https://github.com/7dsolv/IA_Neural)
+[![Abrir laboratório](https://img.shields.io/badge/ABRIR_LAB-16dcef?style=for-the-badge&logo=githubpages&logoColor=041018)](https://7dsolv.github.io/IA_Neural/)
+[![Código](https://img.shields.io/badge/CÓDIGO-7b61ff?style=for-the-badge&logo=github&logoColor=white)](https://github.com/7dsolv/IA_Neural)
 
 </td>
 <td width="50%" valign="top">
@@ -147,6 +148,23 @@ Pesquisa, ideias e protótipos na interseção entre computação, matemática e
 [![Acessar o Drive](https://img.shields.io/badge/ABRIR_GOOGLE_DRIVE-0b5cff?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/13K20ctDlS_xR-s3Zp3Yle_kPhxTTYf_v?hl=pt-br)
 
 </div>
+
+### Neural IA — laboratório aberto para a comunidade
+
+<a href="https://7dsolv.github.io/IA_Neural/">
+  <img src="./assets/neural-ia-lab.svg" width="100%" alt="Neural IA — laboratório neural vivo no navegador" />
+</a>
+
+<div align="center">
+
+[![Abrir laboratório](https://img.shields.io/badge/ABRIR_LABORATÓRIO-16dcef?style=for-the-badge&logo=githubpages&logoColor=041018)](https://7dsolv.github.io/IA_Neural/)
+[![Ver código](https://img.shields.io/badge/VER_CÓDIGO-7b61ff?style=for-the-badge&logo=github&logoColor=white)](https://github.com/7dsolv/IA_Neural)
+[![Contribuir](https://img.shields.io/badge/CONTRIBUIR-20f6a7?style=for-the-badge&logo=git&logoColor=041018)](https://github.com/7dsolv/IA_Neural/issues/new/choose)
+[![Criar fork](https://img.shields.io/badge/CRIAR_FORK-07111f?style=for-the-badge&logo=github&logoColor=20e3ff)](https://github.com/7dsolv/IA_Neural/fork)
+
+</div>
+
+Treinamento e inferência acontecem localmente no navegador. O projeto inclui cinco datasets, visualização da fronteira de decisão, grafo da arquitetura, exportação dos pesos, motor equivalente em Python, testes, CI, CodeQL e instruções próprias para o GitHub Copilot.
 
 ### Leia meus PDFs sem sair do ecossistema
 

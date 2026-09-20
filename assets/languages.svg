@@ -30,31 +30,31 @@
   <circle cx="25" cy="74" r="5" fill="#55a7d9"/>
   <text x="40" y="78" fill="#d8e7ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">C</text>
   <rect x="154" y="64" width="244" height="13" rx="4" fill="#17283a"/>
-  <rect x="154" y="64" width="81.2" height="13" rx="4" fill="#55a7d9"/>
-  <text x="424" y="76" fill="#d8e7ff" font-family="Consolas,monospace" font-size="12">33.3%</text>
+  <rect x="154" y="64" width="81.0" height="13" rx="4" fill="#55a7d9"/>
+  <text x="424" y="76" fill="#d8e7ff" font-family="Consolas,monospace" font-size="12">33.2%</text>
   <circle cx="25" cy="108" r="5" fill="#f89820"/>
   <text x="40" y="112" fill="#d8e7ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">Java</text>
   <rect x="154" y="98" width="244" height="13" rx="4" fill="#17283a"/>
   <rect x="154" y="98" width="27.2" height="13" rx="4" fill="#f89820"/>
-  <text x="424" y="110" fill="#d8e7ff" font-family="Consolas,monospace" font-size="12">11.2%</text>
+  <text x="424" y="110" fill="#d8e7ff" font-family="Consolas,monospace" font-size="12">11.1%</text>
   <circle cx="25" cy="142" r="5" fill="#ffd343"/>
   <text x="40" y="146" fill="#d8e7ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">Python</text>
   <rect x="154" y="132" width="244" height="13" rx="4" fill="#17283a"/>
-  <rect x="154" y="132" width="24.0" height="13" rx="4" fill="#ffd343"/>
+  <rect x="154" y="132" width="23.9" height="13" rx="4" fill="#ffd343"/>
   <text x="424" y="144" fill="#d8e7ff" font-family="Consolas,monospace" font-size="12"> 9.8%</text>
   <circle cx="25" cy="176" r="5" fill="#e34c26"/>
   <text x="40" y="180" fill="#d8e7ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">HTML</text>
   <rect x="154" y="166" width="244" height="13" rx="4" fill="#17283a"/>
-  <rect x="154" y="166" width="18.9" height="13" rx="4" fill="#e34c26"/>
-  <text x="424" y="178" fill="#d8e7ff" font-family="Consolas,monospace" font-size="12"> 7.7%</text>
+  <rect x="154" y="166" width="19.4" height="13" rx="4" fill="#e34c26"/>
+  <text x="424" y="178" fill="#d8e7ff" font-family="Consolas,monospace" font-size="12"> 7.9%</text>
   <circle cx="25" cy="210" r="5" fill="#5f93d4"/>
   <text x="40" y="214" fill="#d8e7ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">C++</text>
   <rect x="154" y="200" width="244" height="13" rx="4" fill="#17283a"/>
   <rect x="154" y="200" width="16.2" height="13" rx="4" fill="#5f93d4"/>
-  <text x="424" y="212" fill="#d8e7ff" font-family="Consolas,monospace" font-size="12"> 6.7%</text>
+  <text x="424" y="212" fill="#d8e7ff" font-family="Consolas,monospace" font-size="12"> 6.6%</text>
   <circle cx="25" cy="244" r="5" fill="#f1e05a"/>
   <text x="40" y="248" fill="#d8e7ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">JavaScript</text>
   <rect x="154" y="234" width="244" height="13" rx="4" fill="#17283a"/>
-  <rect x="154" y="234" width="15.0" height="13" rx="4" fill="#f1e05a"/>
+  <rect x="154" y="234" width="14.9" height="13" rx="4" fill="#f1e05a"/>
   <text x="424" y="246" fill="#d8e7ff" font-family="Consolas,monospace" font-size="12"> 6.1%</text>
 </svg>

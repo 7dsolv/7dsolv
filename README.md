@@ -135,6 +135,7 @@ KONAET X02: pesquisa com memória, pesos INT8 treinados do zero, painel MATLAB, 
 
 [![Validar KONAET](https://github.com/7dsolv/RealidadeQuantica/actions/workflows/integrated.yml/badge.svg?branch=main)](https://github.com/7dsolv/RealidadeQuantica/actions/workflows/integrated.yml)
 [![Release KONAET](https://img.shields.io/github/v/release/7dsolv/RealidadeQuantica?label=release&color=8b5cf6)](https://github.com/7dsolv/RealidadeQuantica/releases/latest)
+[![App KONAET autenticada](https://github.com/7dsolv/konaet-bot/actions/workflows/verificar-identidade.yml/badge.svg?branch=main)](https://github.com/7dsolv/konaet-bot/actions/runs/42883494662)
 
 [Placa 3D](https://github.com/7dsolv/RealidadeQuantica/blob/main/hardware/x02-acquisition/x02-acquisition.stl) · [Evidências e limites](https://github.com/7dsolv/RealidadeQuantica/blob/main/integrated/VERIFICATION.md) · [Action KONAET](https://github.com/7dsolv/konaet-bot)
 

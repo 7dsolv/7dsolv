@@ -127,11 +127,16 @@ Laboratório open source para treinar redes neurais no navegador, visualizar dec
 
 ### [`Realidade Quântica`](https://github.com/7dsolv/RealidadeQuantica)
 
-Pesquisa, ideias e protótipos na interseção entre computação, matemática e física quântica.
+KONAET X02: pesquisa com memória, pesos INT8 treinados do zero, painel MATLAB, circuito e implementação SystemVerilog para FPGA. Esquema/PCB KiCad e resultados reproduzíveis publicados.
 
-`Física` `Simulação` `Teoria` `Pesquisa`
+`MATLAB` `Fortran` `SystemVerilog` `TinyML` `KiCad`
 
 [![Abrir projeto](https://img.shields.io/badge/ABRIR_PROJETO-0b5cff?style=for-the-badge&logo=github&logoColor=white)](https://github.com/7dsolv/RealidadeQuantica)
+
+[![Validar KONAET](https://github.com/7dsolv/RealidadeQuantica/actions/workflows/integrated.yml/badge.svg?branch=main)](https://github.com/7dsolv/RealidadeQuantica/actions/workflows/integrated.yml)
+[![Release KONAET](https://img.shields.io/github/v/release/7dsolv/RealidadeQuantica?label=release&color=8b5cf6)](https://github.com/7dsolv/RealidadeQuantica/releases/latest)
+
+[Placa 3D](https://github.com/7dsolv/RealidadeQuantica/blob/main/hardware/x02-acquisition/x02-acquisition.stl) · [Evidências e limites](https://github.com/7dsolv/RealidadeQuantica/blob/main/integrated/VERIFICATION.md) · [Action KONAET](https://github.com/7dsolv/konaet-bot)
 
 </td>
 </tr>

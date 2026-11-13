@@ -1,9 +1,9 @@
-<a href="https://konaet-atlas-7dsolv.konyesty58.chatgpt.site">
+<a href="https://7dsolv.github.io/konaet-atlas/">
   <img src="./assets/caderno-konaet.webp" width="100%" alt="O Caderno KONAET — Adilson Oliveira, @7dsolv. Colagem de jornal, papéis e anotações sobre software, inteligência artificial, ciência e hardware." />
 </a>
 
 <p align="center">
-  <strong><a href="https://konaet-atlas-7dsolv.konyesty58.chatgpt.site">ABRIR O ATLAS INTERATIVO ↗</a></strong>
+  <strong><a href="https://7dsolv.github.io/konaet-atlas/">ABRIR O ATLAS INTERATIVO ↗</a></strong>
   &nbsp; · &nbsp; <a href="#código-aberto-para-explorar">Código</a>
   &nbsp; · &nbsp; <a href="#biblioteca">Biblioteca</a>
   &nbsp; · &nbsp; <a href="#conexões">Conexões</a>
@@ -13,7 +13,7 @@
 
 Construo sistemas para transformar curiosidade em código. **KONAET** conecta engenharia de software, inteligência artificial, matemática e experimentação.
 
-O [Atlas](https://konaet-atlas-7dsolv.konyesty58.chatgpt.site) reúne mapa navegável, pesquisa de projetos, PDFs e referências salvas no seu dispositivo. Este perfil apresenta o caderno; o portal oferece a navegação interativa.
+O [Atlas](https://7dsolv.github.io/konaet-atlas/) reúne mapa navegável, pesquisa de projetos, PDFs e referências salvas no seu dispositivo. Este perfil apresenta o caderno; o portal oferece a navegação interativa.
 
 ## Código aberto para explorar
 

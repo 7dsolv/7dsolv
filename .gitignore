@@ -2,6 +2,9 @@ __pycache__/
 *.py[cod]
 .DS_Store
 Thumbs.db
+dist/
+node_modules/
+artifacts/
 
 # Projetos independentes mantidos em seus próprios repositórios.
 /konaet cover/

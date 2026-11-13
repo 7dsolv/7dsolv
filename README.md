@@ -1,3 +1,5 @@
+
+Clique na Pagina.. 
 <a href="https://7dsolv.github.io/konaet-atlas/">
   <img src="./assets/caderno-konaet.webp" width="100%" alt="O Caderno KONAET — Adilson Oliveira, @7dsolv. Colagem de jornal, papéis e anotações sobre software, inteligência artificial, ciência e hardware." />
 </a>
